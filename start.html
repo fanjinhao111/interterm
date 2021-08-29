@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>早茶之始</title>
+<style type="text/css">
+	<!--首页背景样式-->
+	.a1 {
+		position: relative;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 900px;
+		height: 500px;
+		}
+	.d1 {
+		position:absolute;
+		left:50%;
+		margin-left:-350px;
+		top:80px;
+		opacity:0.5;
+		}
+	.d2 {
+		position:absolute;
+		left:50%;
+		margin-left:-570px;
+		top:10px;
+		}
+	
+	.d3 {position:absolute;
+		left:50%;
+		margin-left:-510px;
+		top:25px;	
+		}
+	.d4 {position:absolute;
+		left:50%;
+		margin-left:280px;
+		top:120px;	
+		}
+	.d5 {position:absolute;
+		left:50%;
+		margin-left:280px;
+		top:300px;	
+		}
+	.word {
+		position:absolute;
+		left:50%;
+		margin-left:-278px;
+		top:130px;
+		width: 500px;
+		height: auto;
+		}
+	#w1{
+		font-family: 华文行楷;
+		font-size: 25px;
+		line-height: 1.3em;
+		font-weight: 500;
+		}
+	#w2{
+		font-family: 华文行楷;
+		font-size: 25px;
+		line-height: 1.3em;
+		font-weight: 500;
+		}
+	.bt {
+		position:absolute;
+		left:50%;
+		margin-left:-346px;
+		top:160px;
+		width: 50px;
+		height: auto;
+		}
+	.bt p {
+		font-family: 华文行楷;
+		font-size: 30px;
+		line-height: 1.4em;
+		font-weight: 900;
+		}
+	#jj {
+		position:absolute;
+		left:50%;
+		margin-left:295px;
+		top:120px;
+		width: 100px;
+		height: auto;  
+		font-family: 华文行楷;
+		font-size: 35px;
+		line-height: 1.4em;
+		font-weight: 900;
+		}
+	#qy {
+		position:absolute;
+		left:50%;
+		margin-left:298px;
+		top:300px;
+		width: 100px;
+		height: auto;
+		font-family: 华文行楷;
+		font-size: 35px;
+		line-height: 1.4em;
+		font-weight: 900;
+		}
+	.z1 {
+		position:absolute;
+		left:50%;
+		margin-left:460px;
+		top:20px;
+		}
+	.z1:hover
+		{
+		transform:scale(1.1);
+		cursor:pointer;
+		border:none;
+		}
+	.sec_on{
+		color:#FBF7F7;
+	}
+	.sec_off{
+		color:#050505;
+	}
+	</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function show(num)
+	{
+		for(var i=1;i<=2;i++)
+			{
+				document.getElementById("w1").style.display="none";
+				document.getElementById("w2").style.display="none";
+				
+			}
+		document.getElementById("w"+num).style.display="block";
+	}
+</script>
+
+</head>
+
+<body>
+	<div class="a1" width="900px" height="500px" align="center">
+	  <img src="images/index_1.jpg" width="1280px" height="800px"> 
+	  <div class="d1">
+		    <img src="images/wenbenkuang.png" width="600" alt="文本框"> 
+  	        </div>
+    		  <div class="d2">
+       	    <img src="images/navigation.png" width="80" height="80"> 
+       	    </div>
+       	    <div class="d3">
+    	    <img src="images/navigation_4.png" width="150" alt="早茶之始"> 
+      	    </div>
+       	    <div class="d4">
+    	    <img src="images/longti.jpg.png" width="130" alt="笼屉" onClick="show(1);javascript:jj.className='sec_on';qy.className='sec_off';"> 
+      	    </div>
+      	    
+       	    	<a href="#"><p id="jj" class="sec_on" onClick="show(1);javascript:jj.className='sec_on';qy.className='sec_off';">简介</p></a>
+       	    
+      	    <div class="d5">
+    	    <img src="images/longti.jpg.png" width="130" alt="笼屉" onClick="show(2);javascript:qy.className='sec_on';jj.className='sec_off';"> 
+      	    </div>
+       	    	<a href="#"><p id="qy" class="sec_off" onClick="show(2);javascript:qy.className='sec_on';jj.className='sec_off';">起源</p></a>
+       	    <div class="bt">
+       	    	<p>扬<br>州<br>早<br>茶<br>文<br>化<br></p>
+       	    </div>
+       	    
+       	     <div class="word" id="w1">
+				<p align="left">在扬州品味早茶文化，不仅是一种吃，更是在于那份柔柔的情。<br><br>此处长江下游东岸的扬州，是一座古老的城市，其盛誉无数，有“世界遗产城市”、东亚文化之都、国家历史文化名城等美誉，也有“世界美食之都”之称谓。</p>
+       	   	 </div>
+       	   	  <div class="word" id="w2" style="display: none">
+				<p align="left">扬州人吃早茶的习惯从盐商时代开始盛行，“扬八属”各县都遍布了大大小小的茶社。
+
+扬州管茶肆叫 茶社 ，没有叫茶馆的。</p>
+       	   	 </div>
+      <div class="z1">
+	        <a href="navigation.html"><img src="images/hdml.png" width="150" alt="回到目录"></a>
+	        </div>
+   	        
+	</div>
+</body>
+</html>
+
